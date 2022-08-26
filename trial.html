@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<title>trial</title>
+
+<style>
+.container {
+  position: relative;
+}
+
+.black-box {
+  position: relative;
+  z-index: 1;
+  border: 2px solid black;
+  height: 100px;
+  margin: 30px;
+}
+
+.gray-box {
+  position: absolute;
+  z-index: 3;
+  background: lightgray;
+  height: 60px;
+  width: 70%;
+  left: 50px;
+  top: 50px;
+}
+
+.green-box {
+  position: absolute;
+  z-index: 2;
+  background: lightgreen;
+  width: 35%;
+  left: 270px;
+  top: -15px;
+  height: 100px;
+}
+    
+label
+    {
+  margin: 10px 0px 10px 200px; 
+    }
+
+p{
+ margin: 10px 0px 10px 200px;     
+    }
+    
+ h1{
+  margin: 10px 0px 10px 200px;      
+    }
+    
+h3{
+  margin: 10px 0px 10px 200px;      
+    }  
+input[type=text] {
+  width: 40%;
+  padding: 12px 20px;
+  margin-top: 10px;
+  margin-left: 200px;
+  margin-bottom: 10px;   
+  /*box-sizing: border-box;*/
+}
+
+input[type=text]:focus {
+background-color: lightblue;
+}
+    
+input[type=text]:focus {
+border: 3px solid #555;
+}
+    
+textarea {
+  width: 40%;
+  height: 150px;
+  padding: 12px 20px;
+  margin: 10px 0px 10px 200px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+    
+input[type=button]{
+  background-color: #7891F7;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 10px 0px 10px 200px;
+  cursor: pointer;
+}
+
+/* for splitting the page into two cols*/
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+    
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
+
+ /* Add a black background color to the top navigation */
+.topnav {
+  background-color: #FFFFFF;
+  
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: center;
+  color: #000000;
+  text-align: center;
+  padding: 10px 1px;
+  margin: 0px 0px 10px 70px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #EFF1FC;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #FFFFFF;
+  color: black;
+}
+ 
+
+</style>
+
+
+<body>
+    
+<div class="topnav">
+    
+  <img src="traitquest_logo.png" alt="Italian Trulli" width="50" height="50" style="margin-left: 30px" style="margin-top: 100px";>
+  <a class="active" href="#home" style="margin-left: 400px";>Home</a>
+  <a href="#Services" >Services</a>
+  <a href="#aboutus" >Abount us</a>
+  <a href="Services" >Contact us</a>
+</div>
+    
+    <br>
+    <br>
+<h1>Get in touch</h1>   
+<div class="row">
+  <div class="column" style="background-color:FFFFFF;">
+    <p> We are here for you! how can we help you?</p>
+<br>
+<br>      
+<h3> Drop us a line</h3><br>
+<form>
+  <label for="name">Your name</label><br>
+  <input type="text" id="fname" name="fname" placeholder="please enter your name"><br>
+            
+  <label for="email">Email</label><br>
+  <input type="text" id="email" name="email" placeholder="please enter your email">
+ <br>
+            
+  <label for="subject">Subject</label><br>
+  <input type="text" id="sub" name="subject" placeholder="please enter subject for you message"><br>
+            
+  <label for="message">Message</label><br>
+  <textarea type="text" name="message" rows="10" cols="30">
+  Enter your message here
+</textarea>
+</form>
+
+
+<input type="button" value="Submit" onclick="submit()">
+<input type="button" value="Reset" onclick="reset()" style="margin-left: 10px">
+      
+  </div>
+  <div class="column" style="background-color: #EFF1FC;">
+    
+  </div>
+</div>
+
+    
+</body>
+</html>
